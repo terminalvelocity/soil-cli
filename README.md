@@ -1,11 +1,13 @@
 Soil Cli
 =====
 
+```
  .-.          .
 (   )      o  |
  `-.  .-.  .  |
 (   )(   ) |  |
  `-'  `-'-' `-`-
+ ```
 
 Soil Cli is an npm module for rapidly developing command line tools in ES6's Class syntax.
 
