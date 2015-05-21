@@ -1,14 +1,14 @@
 {
   "name": "soil-cli",
-  "version": "1.2.1",
-  "description": "Soil Cli is a framework for rapidly building ambitious CLI applications with io.js",
+  "version": "1.2.2",
+  "description": "Soil Cli is a framework for rapidly building ambitious CLI applications with io.js using the ES6 Class Syntax",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/terminalvelocity/soil"
+    "url": "terminalvelocity/soil-cli"
   },
   "keywords": [
     "seeds",
@@ -21,9 +21,9 @@
   "author": "John-Henry Liberty <jhliberty@terminalvelo.city> (http://terminalvelo.city)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/terminalvelocity/soil/issues"
+    "url": "https://github.com/terminalvelocity/soil-cli/issues"
   },
-  "homepage": "https://github.com/terminalvelocity/soil",
+  "homepage": "https://github.com/terminalvelocity/soil-cli",
   "dependencies": {
     "chalk": "^1.0.0",
     "chdir": "0.0.0",
