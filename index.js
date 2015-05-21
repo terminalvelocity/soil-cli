@@ -1,4 +1,3 @@
-// var path = require('path');
+var path = require('path');
 
-// module.exports = require(path.join(__dirname, 'lib'));
-exports = require('./package');
+module.exports = require(path.join(__dirname, 'lib'));
