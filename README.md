@@ -1,6 +1,8 @@
 Soil Cli
 =====
 
+[![Join the chat at https://gitter.im/terminalvelocity/soil-cli](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/terminalvelocity/soil-cli?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ```
  S)ssss          ## l)L       C)ccc  l)L  ##
 S)    ss             l)      C)   cc  l)
