@@ -15,5 +15,3 @@ npm-debug.log
 .DS_Store
 .eslintrc
 .eslintignore
-
-test/
