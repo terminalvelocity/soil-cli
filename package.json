@@ -1,6 +1,6 @@
 {
   "name": "soil-cli",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Soil Cli is a framework for rapidly building ambitious CLI applications with io.js using the ES6 Class Syntax",
   "main": "index.js",
   "scripts": {

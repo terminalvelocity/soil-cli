@@ -1,10 +1,17 @@
 # Changelog
 
+## v1.3.2 | 2015-06-02
+* table of contents update
+* Update doctoc script
+* Adds scripts to package.json
+* update npmignore
+
 ## v1.3.1 | 2015-06-02
 * Fixes test, adds release
 
 ### 0.0.0
 Init
+
 
 
 
