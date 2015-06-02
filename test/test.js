@@ -1,5 +1,5 @@
 var assert = require('assert');
-var Seeds = require('../index');
+var Soil = require('../index');
 
 describe('Array', function(){
   describe('#indexOf()', function(){
@@ -16,8 +16,8 @@ describe('Array', function(){
 
 });
 
-describe('Seeds', function() {
+describe('Soil', function() {
   it('should return a function', function() {
-    assert.equal(typeof Seeds, typeof Function);
+    assert.equal(typeof Soil, typeof Function);
   });
 });
