@@ -4,7 +4,8 @@
   "description": "Soil Cli is a framework for rapidly building ambitious CLI applications with io.js using the ES6 Class Syntax",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "lint": "eslint -c .eslintrc lib/"
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,10 @@
     "graceful-fs": "^3.0.6",
     "mkdirp-then": "^1.0.1",
     "resolve": "^1.1.6"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "eslint": "^0.22.1",
+    "mocha": "^2.2.5"
   }
 }
