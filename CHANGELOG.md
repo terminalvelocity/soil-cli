@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.3 | 2015-06-02
+* update npmignore
+* Remove redundant test from .npmignore
+
 ## v1.3.2 | 2015-06-02
 * table of contents update
 * Update doctoc script
@@ -11,6 +15,7 @@
 
 ### 0.0.0
 Init
+
 
 
 
