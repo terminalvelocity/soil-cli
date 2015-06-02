@@ -6,8 +6,19 @@
   "scripts": {
     "test": "mocha test/",
     "lint": "eslint -c .eslintrc lib/",
+    "lint-staged": "git diff --diff-filter=ACMRTUXB --cached --name-only | grep '.*\\.js$' | grep -v 'node_modules' | xargs eslint -c .eslintrc --ext .js --ext .js",
+    "doctoc": "doctoc --title '**Soil-Cli**' README.md ",
+    "changelog": "/bin/bash -c 'source ./scripts.sh && generate_git_changelog'",
     "release": "npm run test && npm run lint"
   },
+  "config": {
+      "notes": "important to correct the path of npm so that the git hook doesn't error",
+      "ghooks": {
+        "pre-commit": "PATH=$PATH:/usr/local/bin:/usr/local/sbin && npm run lint-staged",
+        "pre-push": "PATH=$PATH:/usr/local/bin:/usr/local/sbin && npm run doctoc && npm run lint && npm test",
+        "update": "PATH=$PATH:/usr/local/bin:/usr/local/sbin && npm install"
+      }
+    },
   "repository": {
     "type": "git",
     "url": "terminalvelocity/soil-cli"
@@ -38,7 +49,9 @@
   },
   "devDependencies": {
     "chai": "^2.3.0",
+    "doctoc": "^0.13.0",
     "eslint": "^0.22.1",
+    "ghooks": "^0.3.2",
     "mocha": "^2.2.5"
   }
 }
