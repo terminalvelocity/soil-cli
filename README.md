@@ -26,7 +26,9 @@ It is developed by [TerminalVelo.city](https://github.com/terminalvelocity).
 
 ## Current Roadmap
 
-- Documentation
-- Most Frequently Used CLI Functions
-- Promisify all the things!
+- [ ] Documentation
+- [ ] Better Commands Feature in ES6 classes
+  - [ ] Include aliases and help output
+- [ ] Most Frequently Used CLI Functions
+- [ ] Promisify all the things!
 
