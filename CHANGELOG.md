@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.3.4 | 2015-06-02
+* Updates roadmap
+
 ## v1.3.3 | 2015-06-02
 * update npmignore
 * Remove redundant test from .npmignore
@@ -15,6 +18,7 @@
 
 ### 0.0.0
 Init
+
 
 
 
