@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.6 | 2015-06-17
+* adds babel as devdep, adds build-es5 to release step/package.json
+* Adds .es6 files to npm ignore
+
 ## v1.3.5 | 2015-06-02
 
 
@@ -21,6 +25,7 @@
 
 ### 0.0.0
 Init
+
 
 
 
