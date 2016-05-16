@@ -1,3 +1,2 @@
-lib/templates
-lib/helpers
-lib/cli.js
+lib/
+node_modules/

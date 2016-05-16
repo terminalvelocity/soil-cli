@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+process.title = 'Soil';
+
+const CLI = require('../lib').default;
+const args = process.argv.slice(2);
+const cli = CLI.create({ args: args });
+
+cli.cmd();

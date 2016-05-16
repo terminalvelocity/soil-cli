@@ -16,19 +16,3 @@ Soil Cli is an npm module for rapidly developing command line tools in ES6's Cla
 
 It is developed by [TerminalVelo.city](https://github.com/terminalvelocity).
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Soil Cli**
-
-- [Current Roadmap](#current-roadmap)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Current Roadmap
-
-- [ ] Documentation
-- [ ] Better Commands Feature in ES6 classes
-  - [ ] Include aliases and help output
-- [ ] Most Frequently Used CLI Functions
-- [ ] Promisify all the things!
-
