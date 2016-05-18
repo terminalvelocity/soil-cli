@@ -5,7 +5,6 @@ import { exit } from 'process';
 import Promise from 'bluebird';
 import pkg from '../../package';
 import exec from '../utils/exec';
-import rmrf from '../utils/rmrf';
 import commands from './commands';
 import banner from '../helpers/banner';
 import { green, red } from 'colors/safe';
@@ -41,7 +40,7 @@ class CLI {
   }
 
   rmrf(path) {
-    return rmrf(path);
+    return fs.rmdirAsync(path);
   }
 
   noop() {
@@ -53,6 +52,10 @@ class CLI {
       return console.log(`${green('Seeds')}: ${message}\n${obj}`);
     }
     return this.noop();
+  }
+
+  exists(path) {
+    return fs.existsAsync(path);
   }
 
   error(message, code = 1) {

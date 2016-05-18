@@ -3,7 +3,8 @@
     "modules": true
   },
   "env": {
-    "node": true
+    "node": true,
+    "es6": true
   },
   "globals": {
     "Map": true,
