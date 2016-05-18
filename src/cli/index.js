@@ -1,3 +1,4 @@
+import Ora from 'ora';
 const { assign } = Object;
 import { exit } from 'process';
 import Promise from 'bluebird';
@@ -26,12 +27,12 @@ class CLI {
     return process.cwd();
   }
 
-  async exec(cmd, cwd = this.cwd) {
+  exec(cmd, cwd = this.root) {
     const options = { cwd: cwd, encoding: 'utf8' };
-    await exec(cmd, options);
+    exec(cmd, options);
   }
 
-  batch(...cmds) {
+  batch(cmds) {
     return Promise.all(cmds);
   }
 
@@ -78,6 +79,10 @@ class CLI {
       }
     }
     return commands.help(this);
+  }
+
+  spinner(options) {
+    return Ora(options);
   }
 
   setProps(props = {}) {
