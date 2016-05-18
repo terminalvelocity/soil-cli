@@ -1,4 +1,4 @@
-import Soil from '../lib';
+import Soil from '../../lib';
 import { expect } from 'chai';
 
 describe('Soil', function() {
@@ -13,7 +13,7 @@ describe('Soil', function() {
   });
 
   it('have a reference to the package.json', async function() {
-    const actualPkg = require('../package.json');
+    const actualPkg = require('../../package.json');
     const expectedPkg = cli.pkg;
     expect(actualPkg).to.be.eql(expectedPkg);
   });
