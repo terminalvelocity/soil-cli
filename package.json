@@ -4,7 +4,7 @@
   "description": "Soil Cli is a framework for rapidly building ambitious CLI applications with io.js using the ES6 Class Syntax",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha test/",
+    "test": "",
     "lint": "eslint -c .eslintrc src/",
     "lint-staged": "git diff --diff-filter=ACMRTUXB --cached --name-only | grep '.*\\.js$' | grep -v 'node_modules' | xargs eslint -c .eslintrc --ext .js --ext .js",
     "doctoc": "doctoc README.md --title '**Soil Cli**' && if [ -f CONTRIBUTING.md ]; then doctoc CONTRIBUTING.md; fi && if [[ $(git diff --shortstat -- README.md 2> /dev/null | tail -n1) != '' || $(git diff --shortstat -- CONTRIBUTING.md 2> /dev/null | tail -n1) != '' ]]; then git add README.md CONTRIBUTING.md && git commit --no-verify -m'table of contents update'; fi",
