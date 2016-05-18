@@ -1,30 +1,26 @@
 import Ora from 'ora';
 const { assign } = Object;
+import fs from '../utils/fs';
 import { exit } from 'process';
 import Promise from 'bluebird';
-import fs from '../utils/fs';
+import pkg from '../../package';
 import exec from '../utils/exec';
 import rmrf from '../utils/rmrf';
 import commands from './commands';
 import banner from '../helpers/banner';
 import { green, red } from 'colors/safe';
 
+
 class CLI {
+  dir = __dirname;
   ui = console.log;
+  cwd = process.cwd();
   root = process.env.PWD;
   environment = process.env.NODE_ENV || 'development';
 
   constructor(props = {}) {
     this.setProps(props);
     return this;
-  }
-
-  get dir() {
-    return __dirname;
-  }
-
-  get cwd() {
-    return process.cwd();
   }
 
   exec(cmd, cwd = this.root) {
@@ -79,6 +75,10 @@ class CLI {
       }
     }
     return commands.help(this);
+  }
+
+  get pkg() {
+    return pkg;
   }
 
   spinner(options) {

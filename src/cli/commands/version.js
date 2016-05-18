@@ -1,5 +1,6 @@
-import pkg from '../../../package.json';
-
 export default async function version(cli) {
-  cli.ui(pkg.version);
+  const { pkg, ui, exit } = cli;
+
+  ui(pkg.version);
+  exit();
 };
