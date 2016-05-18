@@ -74,7 +74,6 @@ describe('Soil', function () {
   })));
 
   it('should respond to static create method', function () {
-    console.log(_lib2.default.create());
     (0, _chai.expect)(_lib2.default).itself.to.respondTo('create');
   });
 

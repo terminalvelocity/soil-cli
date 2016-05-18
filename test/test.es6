@@ -26,7 +26,6 @@ describe('Soil', function() {
   });
 
   it('should respond to static create method', function() {
-    console.log(Soil.create());
     expect(Soil).itself.to.respondTo('create');
   });
 
